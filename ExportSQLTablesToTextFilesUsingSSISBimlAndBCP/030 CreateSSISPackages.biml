@@ -47,7 +47,7 @@
                 <Tasks>
                     <ExecuteProcess
                         Name="<#=bcpFormatTaskName#>"
-                        Arguments="<#=tableName3Part#> format nul -t&quot;<#=bcpDelimiter#>&quot; -f <#=bcpFormatFile#> -x -T -S <#=sqlServerName#>"
+                        Arguments="<#=tableName3Part#> format nul -t&quot;<#=bcpDelimiter#>&quot; -c -f <#=bcpFormatFile#> -x -T -S <#=sqlServerName#>"
                         Executable="<#=bcpPath#>" />
                 </Tasks>
             </Package>
