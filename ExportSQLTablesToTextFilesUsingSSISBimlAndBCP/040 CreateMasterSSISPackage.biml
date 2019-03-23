@@ -1,3 +1,23 @@
 ﻿<#@ template tier="40" #>
 <Biml xmlns="http://schemas.varigence.com/biml.xsd">
+    <Packages>
+        <Package Name="MASTER_CREATE_BCP_FORMAT_FILES" ProtectionLevel="DontSaveSensitive" ConstraintMode="Parallel">
+            <Tasks>
+                <# foreach(var package in RootNode.Packages.Where(p => p.Name.StartsWith("CREATE"))) { #>
+                    <ExecutePackage Name="EXECUTE_<#=package.Name#>">
+                        <ExternalProjectPackage Package="<#=package.PackageFileName#>" />
+                    </ExecutePackage>
+                <# } #>
+            </Tasks>
+        </Package>
+        <Package Name="MASTER_EXPORT_TABLES" ProtectionLevel="DontSaveSensitive" ConstraintMode="Parallel">
+            <Tasks>
+                <# foreach(var package in RootNode.Packages.Where(p => p.Name.StartsWith("EXPORT"))) { #>
+                    <ExecutePackage Name="EXECUTE_<#=package.Name#>">
+                        <ExternalProjectPackage Package="<#=package.PackageFileName#>" />
+                    </ExecutePackage>
+                <# } #>
+            </Tasks>
+        </Package>
+    </Packages>
 </Biml>
