@@ -1,0 +1,38 @@
+﻿<#@ template tier="10" #>
+<Biml xmlns="http://schemas.varigence.com/biml.xsd">
+    <#
+        RootNode.ObjectTag["PROJECT_NAME"] = "ExportSQLTablesToTextFilesUsingSSISBimlAndBCP";
+        RootNode.ObjectTag["SQL_SERVER_NAME"] = "localhost";
+        RootNode.ObjectTag["DATABASE_NAME"] = "AdventureWorks2014";
+        RootNode.ObjectTag["BCP_PATH"] = @"C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\bcp.exe";
+        
+        string rootFolder = @"C:\ETL";
+        string formatFilesFolder = string.Format(@"{0}\{1}\", rootFolder, "FORMAT_FILES");
+        string exportFilesFolder = string.Format(@"{0}\{1}\", rootFolder, "EXPORT_FILES");
+        string outputFilesFolder = string.Format(@"{0}\{1}\", rootFolder, "OUTPUT_FILES");
+        
+        RootNode.ObjectTag["FORMAT_FILES_FOLDER"] = formatFilesFolder;
+        RootNode.ObjectTag["EXPORT_FILES_FOLDER"] = exportFilesFolder;
+        RootNode.ObjectTag["OUTPUT_FILES_FOLDER"] = outputFilesFolder;
+        
+        if (System.IO.Directory.Exists(rootFolder) == false)
+        {
+            System.IO.Directory.CreateDirectory(rootFolder);
+        }
+        
+        if (System.IO.Directory.Exists(formatFilesFolder) == false)
+        {
+            System.IO.Directory.CreateDirectory(formatFilesFolder);
+        }
+        
+        if (System.IO.Directory.Exists(exportFilesFolder) == false)
+        {
+            System.IO.Directory.CreateDirectory(exportFilesFolder);
+        }
+        
+        if (System.IO.Directory.Exists(outputFilesFolder) == false)
+        {
+            System.IO.Directory.CreateDirectory(outputFilesFolder);
+        }
+    #>
+</Biml>

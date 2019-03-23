@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">DESKTOP-U8PAEJC</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAc/oNwuVOn0Gb9N2m3VtL8QAAAAACAAAAAAAQZgAAAAEAACAAAADmYlztNPxYQn7s5pROqv5MsGwKZ5AEPLNEgGZdg9EGdwAAAAAOgAAAAAIAACAAAACAt7smXe1OhKKf38hoR64QV1Q+MmL0LfUiCckV5bSWQZAAAACeYNVFAH9XJew5ZsCdtnNiFkjKveJ4XCHb49b7+KAAA1ps0MLer+i/pSL70QI11RehGTMsWTtYjwbXA1IMyMRSahO+qfTUnqU+r1FEjVyXfKGPo0IWqgpB/nTgDV5bLAsEH7GpF1EMUgBXoEaDhd70BONoSyiAF+RQChJVLkOgQD3Cc/Yl5nopOzo5BRPNBTJAAAAAnCo20kpBIzUqSpZXrvLl+cmg7m0Dhs2d8IJ93cFgwp8MwLi1uJukraWGLpo8sywv1z20z2zi76YVoRRBj8chbA==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAc/oNwuVOn0Gb9N2m3VtL8QAAAAACAAAAAAAQZgAAAAEAACAAAADdudeWBJ/i2MHNcGg6vkrTbwTESdKZDZ64a8nYZMcRyQAAAAAOgAAAAAIAACAAAABwQPzMdpaKmfJ3qBpIlHJa7jQwXtwCD3aRzGkZocSnm5AAAACGXxSVXyzPNFQVOuXPSN4asoouekYxpiPoePPluN3e6wvqvRKCb2thCzKEXeaxr8orBomuTrZWLSFmRSEfhgY6Gak5oZVnIVBDP8GzNMaUQQ00vJkgmbMwqUkLA+cCHUtZr46rmMX2CVS5h+Yns8+g0VadxeDwzOJJNDAsz7uoF8fO6zEG0iKLeYrx8e2OU9dAAAAASB9azTNxQXTdEH/o5Pf9D2Av6Jn2MS4F0DJmG7gy26+zuGdx13vDQ/qq8GQz4T8fMPL3jhGlgDof/g0vtciRuA==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages />
@@ -39,7 +39,28 @@
     </Manifest>
   </DeploymentModelSpecificContent>
   <ControlFlowParts />
-  <Miscellaneous />
+  <Miscellaneous>
+    <ProjectItem>
+      <Name>010 Configuration.biml</Name>
+      <FullPath>010 Configuration.biml</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>020 Connections.biml</Name>
+      <FullPath>020 Connections.biml</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>030 CreateSSISPackages.biml</Name>
+      <FullPath>030 CreateSSISPackages.biml</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>040 CreateMasterSSISPackage.biml</Name>
+      <FullPath>040 CreateMasterSSISPackage.biml</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>999 DebugOutput.biml</Name>
+      <FullPath>999 DebugOutput.biml</FullPath>
+    </ProjectItem>
+  </Miscellaneous>
   <Configurations>
     <Configuration>
       <Name>Development</Name>

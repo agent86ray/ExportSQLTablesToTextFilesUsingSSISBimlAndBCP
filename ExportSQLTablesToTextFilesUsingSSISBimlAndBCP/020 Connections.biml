@@ -1,0 +1,16 @@
+﻿<#@ template tier="20" #>
+<Biml xmlns="http://schemas.varigence.com/biml.xsd">
+    <#
+        System.Text.StringBuilder connectionString = new System.Text.StringBuilder();
+        connectionString.Append("Provider=SQLNCLI11.1;");
+        connectionString.AppendFormat("Data Source={0};", RootNode.ObjectTag["SQL_SERVER_NAME"].ToString());
+        connectionString.AppendFormat("Initial Catalog={0};", RootNode.ObjectTag["DATABASE_NAME"].ToString());
+        connectionString.Append("Integrated Security=SSPI;");
+    #>
+    <Connections>
+        <OleDbConnection 
+            Name="Source"
+            ConnectionString="<#=connectionString.ToString()#>"
+            CreateInProject="true" />
+    </Connections>
+</Biml>

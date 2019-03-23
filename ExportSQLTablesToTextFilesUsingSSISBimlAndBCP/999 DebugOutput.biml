@@ -1,0 +1,9 @@
+﻿<#@ template tier="999" #>
+<Biml xmlns="http://schemas.varigence.com/biml.xsd">
+    <#
+        string outputFilesFolder = RootNode.ObjectTag["OUTPUT_FILES_FOLDER"].ToString();
+        string projectName = RootNode.ObjectTag["PROJECT_NAME"].ToString();
+        string outputPath = string.Format(@"{0}\{1}.txt", outputFilesFolder, projectName);
+        System.IO.File.WriteAllText(outputPath, RootNode.GetBiml());
+    #>
+</Biml>

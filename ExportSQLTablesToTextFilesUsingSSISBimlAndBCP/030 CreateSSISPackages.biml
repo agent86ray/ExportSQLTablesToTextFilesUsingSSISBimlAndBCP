@@ -1,0 +1,33 @@
+﻿<#@ template tier="30" #>
+<Biml xmlns="http://schemas.varigence.com/biml.xsd">
+    <#
+        // get the source database connection
+        var sourceConnection = RootNode.OleDbConnections["Source"];
+        
+        // specify schemas in the source database for the tables to export
+        var includedSchemas = new List<string> 
+        {
+            "HumanResources",
+            "Person",
+            "Production",
+            "Purchasing",
+            "Sales"
+        };
+        
+        var sourceMetadata = sourceConnection.GetDatabaseSchema(includedSchemas, null
+             ,ImportOptions.ExcludeForeignKey | ImportOptions.ExcludeColumnDefault
+            | ImportOptions.ExcludeViews | ImportOptions.ExcludeIndex | ImportOptions.ExcludePrimaryKey);
+    #>
+    <Packages>
+        <# foreach(var table in sourceMetadata.TableNodes) { #>
+            <Package 
+                Name="EXPORT_<#=table.Name#>" 
+                ConstraintMode="Parallel" 
+                ProtectionLevel="DontSaveSensitive">
+                <Tasks>
+                    
+                </Tasks>
+            </Package>
+        <# } #>
+    </Packages>
+</Biml>
