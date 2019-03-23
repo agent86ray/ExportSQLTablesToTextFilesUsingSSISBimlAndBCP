@@ -12,11 +12,11 @@
   <DataSourceViews />
   <DeploymentModelSpecificContent>
     <Manifest>
-      <SSIS:Project SSIS:ProtectionLevel="EncryptSensitiveWithUserKey" xmlns:SSIS="www.microsoft.com/SqlServer/SSIS">
+      <SSIS:Project SSIS:ProtectionLevel="DontSaveSensitive" xmlns:SSIS="www.microsoft.com/SqlServer/SSIS">
         <SSIS:Properties>
           <SSIS:Property SSIS:Name="ID">{6d2f9f6a-9d52-44fb-ac33-5447bc0d6e86}</SSIS:Property>
           <SSIS:Property SSIS:Name="Name">ExportSQLTablesToTextFilesUsingSSISBimlAndBCP</SSIS:Property>
-          <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
+          <SSIS:Property SSIS:Name="VersionMajor">0</SSIS:Property>
           <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
           <SSIS:Property SSIS:Name="VersionBuild">0</SSIS:Property>
           <SSIS:Property SSIS:Name="VersionComments">
@@ -26,7 +26,6 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">DESKTOP-U8PAEJC</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAc/oNwuVOn0Gb9N2m3VtL8QAAAAACAAAAAAAQZgAAAAEAACAAAACIhR8X5HP9KXd8FQuEiKy+3pBehnFrb2nZIUklCyyhzQAAAAAOgAAAAAIAACAAAADaTl0RihALD4kv9vJywz+Fn2Mq2/BAG/jlDqcqOnRbMZAAAADhXqSJ5NbsMfQKacbZM/en47EFRJacNyRh+uQ2diXlsDyQvNR/6PsjyTJZYRspZyM7PP9dVQiE+RerpBgdoV8pLm4BXNSNAawGgNLhSCntxsY/cQMfBxkhEYWUzZXVeghtG40pdIeAYL/ROXFCge2bRnsMxVcmLIlTA7NJLQUtnskkBBpb/InsoKq/bOU4nZ5AAAAAYgT67eW+Tv5t9+U7zxJZchknfDgdHt+F8YNQ+2M69GlHN7N/ZI1IDW1oeRS4GVw6ZpfFf+F2pKM6NKbnCAt8dg==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages />
@@ -71,7 +70,13 @@
         <ConnectionSecurityMappings />
         <DatabaseStorageLocations />
         <TargetServerVersion>SQLServer2017</TargetServerVersion>
-        <ParameterConfigurationValues />
+        <ParameterConfigurationValues>
+          <ConfigurationSetting>
+            <Id>LastModifiedTime</Id>
+            <Name>LastModifiedTime</Name>
+            <Value xsi:type="xsd:dateTime">2019-03-23T22:13:03.6243718Z</Value>
+          </ConfigurationSetting>
+        </ParameterConfigurationValues>
       </Options>
     </Configuration>
   </Configurations>
