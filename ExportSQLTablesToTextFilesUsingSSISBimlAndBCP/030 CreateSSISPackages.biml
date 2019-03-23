@@ -1,6 +1,12 @@
 ﻿<#@ template tier="30" #>
 <Biml xmlns="http://schemas.varigence.com/biml.xsd">
     <#
+        string bcpPath = RootNode.ObjectTag["BCP_PATH"].ToString();
+        string bcpDelimiter = RootNode.ObjectTag["BCP_DELIMITER"].ToString();
+        string formatFilesFolder = RootNode.ObjectTag["FORMAT_FILES_FOLDER"].ToString();
+        string sqlServerName = RootNode.ObjectTag["SQL_SERVER_NAME"].ToString();
+        string outputFilesFolder = RootNode.ObjectTag["OUTPUT_FILES_FOLDER"].ToString();
+        
         // get the source database connection
         var sourceConnection = RootNode.OleDbConnections["Source"];
         
@@ -19,29 +25,45 @@
             | ImportOptions.ExcludeViews | ImportOptions.ExcludeIndex | ImportOptions.ExcludePrimaryKey);
     #>
     <Packages>
+        <# foreach(var table in sourceMetadata.TableNodes) { #>
         
-        <!-- Create SSIS package that creates BCP format files -->
-        <Package 
-                Name="CREATE_BCP_FORMAT_FILES" 
-                ConstraintMode="Parallel" 
-                ProtectionLevel="DontSaveSensitive">
-            <Tasks>
-                <# foreach(var table in sourceMetadata.TableNodes) { #>
-                        
-                <# } #>
-            </Tasks>
-        </Package>
+            <#
+                string tableName3Part = string.Format("{0}.{1}.{2}",
+                            RootNode.ObjectTag["DATABASE_NAME"].ToString(),
+                            table.Schema.Name,
+                            table.Name);
+            
+                string bcpFormatFile = string.Format("{0}{1}{2}", formatFilesFolder, table.Name, "_fmt.xml");
+                string bcpFormatTaskName = string.Format("CREATE_{0}_BCP_FORMAT_FILE", table.Name);
+                string bcpExportTaskName = string.Format("EXPORT_{0}_TABLE", table.Name);
+                string outputFile = string.Format("{0}{1}.txt", outputFilesFolder, table.Name);
+            #>
+            
+            <!-- Create SSIS package that creates BCP format files -->
+            <Package 
+                    Name="CREATE_<#=table.Name#>_BCP_FORMAT_FILE" 
+                    ConstraintMode="Parallel" 
+                    ProtectionLevel="DontSaveSensitive">
+                <Tasks>
+                    <ExecuteProcess
+                        Name="<#=bcpFormatTaskName#>"
+                        Arguments="<#=tableName3Part#> format nul -t&quot;<#=bcpDelimiter#>&quot; -f <#=bcpFormatFile#> -x -T -S <#=sqlServerName#>"
+                        Executable="<#=bcpPath#>" />
+                </Tasks>
+            </Package>
         
-        <!-- Create SSIS package that exports tables using BCP -->
-        <Package 
-                Name="EXPORT_TABLES" 
-                ConstraintMode="Parallel" 
-                ProtectionLevel="DontSaveSensitive">
-            <Tasks>
-                <# foreach(var table in sourceMetadata.TableNodes) { #>
-                        
-                <# } #>
-            </Tasks>
-        </Package>
+            <!-- Create SSIS package that exports tables using BCP -->
+            <Package 
+                    Name="EXPORT_<#=table.Name#>_TABLE" 
+                    ConstraintMode="Parallel" 
+                    ProtectionLevel="DontSaveSensitive">
+                <Tasks>
+                    <ExecuteProcess
+                        Name="<#=bcpExportTaskName#>"
+                        Arguments="<#=tableName3Part#> out <#=outputFile#> -t&quot;<#=bcpDelimiter#>&quot; -f <#=bcpFormatFile#> -x -T -S <#=sqlServerName#>"
+                        Executable="<#=bcpPath#>" />
+                </Tasks>
+            </Package>
+        <# } #>
     </Packages>
 </Biml>

@@ -5,6 +5,7 @@
         RootNode.ObjectTag["SQL_SERVER_NAME"] = "localhost";
         RootNode.ObjectTag["DATABASE_NAME"] = "AdventureWorks2014";
         RootNode.ObjectTag["BCP_PATH"] = @"C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\bcp.exe";
+        RootNode.ObjectTag["BCP_DELIMITER"] = "|";
         
         string rootFolder = @"C:\ETL";
         string formatFilesFolder = string.Format(@"{0}\{1}\", rootFolder, "FORMAT_FILES");
