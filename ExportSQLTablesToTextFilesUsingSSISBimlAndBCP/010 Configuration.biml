@@ -15,6 +15,7 @@
         RootNode.ObjectTag["EXPORT_FILES_FOLDER"] = exportFilesFolder;
         RootNode.ObjectTag["OUTPUT_FILES_FOLDER"] = outputFilesFolder;
         
+        // create folder hierarchy if it doesn't exist
         if (System.IO.Directory.Exists(rootFolder) == false)
         {
             System.IO.Directory.CreateDirectory(rootFolder);

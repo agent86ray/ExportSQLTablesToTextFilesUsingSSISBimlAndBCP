@@ -19,15 +19,29 @@
             | ImportOptions.ExcludeViews | ImportOptions.ExcludeIndex | ImportOptions.ExcludePrimaryKey);
     #>
     <Packages>
-        <# foreach(var table in sourceMetadata.TableNodes) { #>
-            <Package 
-                Name="EXPORT_<#=table.Name#>" 
+        
+        <!-- Create SSIS package that creates BCP format files -->
+        <Package 
+                Name="CREATE_BCP_FORMAT_FILES" 
                 ConstraintMode="Parallel" 
                 ProtectionLevel="DontSaveSensitive">
-                <Tasks>
-                    
-                </Tasks>
-            </Package>
-        <# } #>
+            <Tasks>
+                <# foreach(var table in sourceMetadata.TableNodes) { #>
+                        
+                <# } #>
+            </Tasks>
+        </Package>
+        
+        <!-- Create SSIS package that exports tables using BCP -->
+        <Package 
+                Name="EXPORT_TABLES" 
+                ConstraintMode="Parallel" 
+                ProtectionLevel="DontSaveSensitive">
+            <Tasks>
+                <# foreach(var table in sourceMetadata.TableNodes) { #>
+                        
+                <# } #>
+            </Tasks>
+        </Package>
     </Packages>
 </Biml>
