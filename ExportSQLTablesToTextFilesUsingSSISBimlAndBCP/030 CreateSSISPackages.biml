@@ -5,7 +5,7 @@
         string bcpDelimiter = RootNode.ObjectTag["BCP_DELIMITER"].ToString();
         string formatFilesFolder = RootNode.ObjectTag["FORMAT_FILES_FOLDER"].ToString();
         string sqlServerName = RootNode.ObjectTag["SQL_SERVER_NAME"].ToString();
-        string outputFilesFolder = RootNode.ObjectTag["OUTPUT_FILES_FOLDER"].ToString();
+        string exportFilesFolder = RootNode.ObjectTag["EXPORT_FILES_FOLDER"].ToString();
         
         // get the source database connection
         var sourceConnection = RootNode.OleDbConnections["Source"];
@@ -36,7 +36,7 @@
                 string bcpFormatFile = string.Format("{0}{1}{2}", formatFilesFolder, table.Name, "_fmt.xml");
                 string bcpFormatTaskName = string.Format("CREATE_{0}_BCP_FORMAT_FILE", table.Name);
                 string bcpExportTaskName = string.Format("EXPORT_{0}_TABLE", table.Name);
-                string outputFile = string.Format("{0}{1}.txt", outputFilesFolder, table.Name);
+                string exportFile = string.Format("{0}{1}.txt", exportFilesFolder, table.Name);
             #>
             
             <!-- Create SSIS package that creates BCP format files -->
@@ -60,7 +60,7 @@
                 <Tasks>
                     <ExecuteProcess
                         Name="<#=bcpExportTaskName#>"
-                        Arguments="<#=tableName3Part#> out <#=outputFile#> -t&quot;<#=bcpDelimiter#>&quot; -f <#=bcpFormatFile#> -x -T -S <#=sqlServerName#>"
+                        Arguments="<#=tableName3Part#> out <#=exportFile#> -t&quot;<#=bcpDelimiter#>&quot; -f <#=bcpFormatFile#> -x -T -S <#=sqlServerName#>"
                         Executable="<#=bcpPath#>" />
                 </Tasks>
             </Package>
