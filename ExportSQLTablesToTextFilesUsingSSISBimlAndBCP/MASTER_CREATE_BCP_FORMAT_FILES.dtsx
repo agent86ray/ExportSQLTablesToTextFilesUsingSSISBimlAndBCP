@@ -1,0 +1,550 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DTS:Executable DTS:CreationDate="03/31/2019 10:29:55" DTS:CreationName="Microsoft.Package" DTS:CreatorComputerName="DESKTOP-U8PAEJC" DTS:CreatorName="RaymondBarley" DTS:DTSID="{2C267828-8F0C-4EEC-8DBD-FC927453279D}" DTS:ExecutableType="Microsoft.Package" DTS:LastModifiedProductVersion="" DTS:LocaleID="1033" DTS:ObjectName="MASTER_CREATE_BCP_FORMAT_FILES" DTS:ProtectionLevel="0" DTS:refId="Package" DTS:VersionBuild="0" DTS:VersionGUID="{E7E8A64D-1463-4F92-A554-3FD4DC9F5DBC}" DTS:VersionMajor="0" xmlns:DTS="www.microsoft.com/SqlServer/Dts">
+  <DTS:Property DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:Executables>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{07195B43-0ACE-4FAE-864E-9F31636156BA}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_CREATE_Department_BCP_FORMAT_FILE" DTS:refId="Package\EXECUTE_CREATE_Department_BCP_FORMAT_FILE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>CREATE_Department_BCP_FORMAT_FILE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{52A7CB64-8A32-4EDB-B58D-7DF94FA723DF}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_CREATE_Employee_BCP_FORMAT_FILE" DTS:refId="Package\EXECUTE_CREATE_Employee_BCP_FORMAT_FILE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>CREATE_Employee_BCP_FORMAT_FILE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{347EA841-CC99-441B-BE08-01AA54DB1983}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_CREATE_EmployeeDepartmentHistory_BCP_FORMAT_FILE" DTS:refId="Package\EXECUTE_CREATE_EmployeeDepartmentHistory_BCP_FORMAT_FILE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>CREATE_EmployeeDepartmentHistory_BCP_FORMAT_FILE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{7B75E58C-F854-401A-8174-3CE7AA2F8CE4}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_CREATE_EmployeePayHistory_BCP_FORMAT_FILE" DTS:refId="Package\EXECUTE_CREATE_EmployeePayHistory_BCP_FORMAT_FILE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>CREATE_EmployeePayHistory_BCP_FORMAT_FILE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{85E2323E-7ACC-4C66-8FDE-63EA33FB6E55}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_CREATE_JobCandidate_BCP_FORMAT_FILE" DTS:refId="Package\EXECUTE_CREATE_JobCandidate_BCP_FORMAT_FILE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>CREATE_JobCandidate_BCP_FORMAT_FILE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{D58AB691-5379-4E4D-9222-A76DA931A087}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_CREATE_Shift_BCP_FORMAT_FILE" DTS:refId="Package\EXECUTE_CREATE_Shift_BCP_FORMAT_FILE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>CREATE_Shift_BCP_FORMAT_FILE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{E288A731-CAA2-4402-869C-FFB05032E641}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_CREATE_Address_BCP_FORMAT_FILE" DTS:refId="Package\EXECUTE_CREATE_Address_BCP_FORMAT_FILE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>CREATE_Address_BCP_FORMAT_FILE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{4FC3E40C-1B6C-44D1-B101-C28DB9EB2E67}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_CREATE_AddressType_BCP_FORMAT_FILE" DTS:refId="Package\EXECUTE_CREATE_AddressType_BCP_FORMAT_FILE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>CREATE_AddressType_BCP_FORMAT_FILE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{1D75B398-7057-49FF-BBC5-2E18C0CEA900}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_CREATE_BusinessEntity_BCP_FORMAT_FILE" DTS:refId="Package\EXECUTE_CREATE_BusinessEntity_BCP_FORMAT_FILE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>CREATE_BusinessEntity_BCP_FORMAT_FILE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{B210FF0B-9A13-499D-93AC-6488B68EC687}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_CREATE_BusinessEntityAddress_BCP_FORMAT_FILE" DTS:refId="Package\EXECUTE_CREATE_BusinessEntityAddress_BCP_FORMAT_FILE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>CREATE_BusinessEntityAddress_BCP_FORMAT_FILE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{33198526-E8C7-4E92-AC77-5377D2F6AA25}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_CREATE_BusinessEntityContact_BCP_FORMAT_FILE" DTS:refId="Package\EXECUTE_CREATE_BusinessEntityContact_BCP_FORMAT_FILE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>CREATE_BusinessEntityContact_BCP_FORMAT_FILE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{6B9ABEC0-11DF-49E4-BC42-0E90CAFB6BA4}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_CREATE_ContactType_BCP_FORMAT_FILE" DTS:refId="Package\EXECUTE_CREATE_ContactType_BCP_FORMAT_FILE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>CREATE_ContactType_BCP_FORMAT_FILE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{338E4F40-6E11-423D-A4B9-017F4ED90497}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_CREATE_CountryRegion_BCP_FORMAT_FILE" DTS:refId="Package\EXECUTE_CREATE_CountryRegion_BCP_FORMAT_FILE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>CREATE_CountryRegion_BCP_FORMAT_FILE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{C8498A53-79D4-4BCC-AF20-4A174E31B318}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_CREATE_EmailAddress_BCP_FORMAT_FILE" DTS:refId="Package\EXECUTE_CREATE_EmailAddress_BCP_FORMAT_FILE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>CREATE_EmailAddress_BCP_FORMAT_FILE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{4FDFC76A-BD14-4891-BC0E-B37E499E36E8}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_CREATE_Password_BCP_FORMAT_FILE" DTS:refId="Package\EXECUTE_CREATE_Password_BCP_FORMAT_FILE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>CREATE_Password_BCP_FORMAT_FILE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{8FC163E8-ECE8-4026-9364-3332E9B2CB9E}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_CREATE_Person_BCP_FORMAT_FILE" DTS:refId="Package\EXECUTE_CREATE_Person_BCP_FORMAT_FILE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>CREATE_Person_BCP_FORMAT_FILE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{01201441-7E72-4CE0-895B-FCCE4CE2EA9B}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_CREATE_PersonPhone_BCP_FORMAT_FILE" DTS:refId="Package\EXECUTE_CREATE_PersonPhone_BCP_FORMAT_FILE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>CREATE_PersonPhone_BCP_FORMAT_FILE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{B2355D9E-18D3-452F-8538-95FAAD662F10}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_CREATE_PhoneNumberType_BCP_FORMAT_FILE" DTS:refId="Package\EXECUTE_CREATE_PhoneNumberType_BCP_FORMAT_FILE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>CREATE_PhoneNumberType_BCP_FORMAT_FILE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{24E7A746-71E5-40D4-AF76-5CF218D76A32}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_CREATE_StateProvince_BCP_FORMAT_FILE" DTS:refId="Package\EXECUTE_CREATE_StateProvince_BCP_FORMAT_FILE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>CREATE_StateProvince_BCP_FORMAT_FILE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{62241DC2-8BE2-4CB2-8EBA-98D5C9116971}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_CREATE_BillOfMaterials_BCP_FORMAT_FILE" DTS:refId="Package\EXECUTE_CREATE_BillOfMaterials_BCP_FORMAT_FILE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>CREATE_BillOfMaterials_BCP_FORMAT_FILE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{F387D64F-114D-456F-92C4-02D5B09A561B}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_CREATE_Culture_BCP_FORMAT_FILE" DTS:refId="Package\EXECUTE_CREATE_Culture_BCP_FORMAT_FILE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>CREATE_Culture_BCP_FORMAT_FILE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{871D30FF-1B74-4B24-BD50-AF2C498E4560}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_CREATE_Document_BCP_FORMAT_FILE" DTS:refId="Package\EXECUTE_CREATE_Document_BCP_FORMAT_FILE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>CREATE_Document_BCP_FORMAT_FILE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{3A1C9E1B-B53F-4E98-BB6B-51912976D1D7}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_CREATE_Illustration_BCP_FORMAT_FILE" DTS:refId="Package\EXECUTE_CREATE_Illustration_BCP_FORMAT_FILE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>CREATE_Illustration_BCP_FORMAT_FILE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{1549FD63-1B33-48ED-8E56-507FC7163941}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_CREATE_Location_BCP_FORMAT_FILE" DTS:refId="Package\EXECUTE_CREATE_Location_BCP_FORMAT_FILE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>CREATE_Location_BCP_FORMAT_FILE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{66E1F6AE-8E3B-4E8B-A977-EC4138402633}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_CREATE_Product_BCP_FORMAT_FILE" DTS:refId="Package\EXECUTE_CREATE_Product_BCP_FORMAT_FILE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>CREATE_Product_BCP_FORMAT_FILE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{8063419A-1897-45CE-A918-AABBFB570A55}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_CREATE_ProductCategory_BCP_FORMAT_FILE" DTS:refId="Package\EXECUTE_CREATE_ProductCategory_BCP_FORMAT_FILE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>CREATE_ProductCategory_BCP_FORMAT_FILE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{5F92D9AF-5992-4623-A074-BDC1103A805B}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_CREATE_ProductCostHistory_BCP_FORMAT_FILE" DTS:refId="Package\EXECUTE_CREATE_ProductCostHistory_BCP_FORMAT_FILE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>CREATE_ProductCostHistory_BCP_FORMAT_FILE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{8903E4D4-F3D5-48C6-A222-AEB8EEDD0670}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_CREATE_ProductDescription_BCP_FORMAT_FILE" DTS:refId="Package\EXECUTE_CREATE_ProductDescription_BCP_FORMAT_FILE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>CREATE_ProductDescription_BCP_FORMAT_FILE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{DC8C01BF-4D88-4804-AA61-095A91C0F417}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_CREATE_ProductDocument_BCP_FORMAT_FILE" DTS:refId="Package\EXECUTE_CREATE_ProductDocument_BCP_FORMAT_FILE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>CREATE_ProductDocument_BCP_FORMAT_FILE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{E9077DC8-2BF3-414E-B1A1-AB07ABB0A4F0}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_CREATE_ProductInventory_BCP_FORMAT_FILE" DTS:refId="Package\EXECUTE_CREATE_ProductInventory_BCP_FORMAT_FILE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>CREATE_ProductInventory_BCP_FORMAT_FILE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{FFBA355C-E884-469E-AEB0-A1B906749128}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_CREATE_ProductListPriceHistory_BCP_FORMAT_FILE" DTS:refId="Package\EXECUTE_CREATE_ProductListPriceHistory_BCP_FORMAT_FILE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>CREATE_ProductListPriceHistory_BCP_FORMAT_FILE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{764740ED-596F-46ED-8194-03FCAF119CB6}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_CREATE_ProductModel_BCP_FORMAT_FILE" DTS:refId="Package\EXECUTE_CREATE_ProductModel_BCP_FORMAT_FILE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>CREATE_ProductModel_BCP_FORMAT_FILE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{22B3CD13-E871-40EF-8B06-E150CE6473BD}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_CREATE_ProductModelIllustration_BCP_FORMAT_FILE" DTS:refId="Package\EXECUTE_CREATE_ProductModelIllustration_BCP_FORMAT_FILE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>CREATE_ProductModelIllustration_BCP_FORMAT_FILE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{9A77BC82-FA90-427B-9414-2064E264CE42}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_CREATE_ProductModelProductDescriptionCulture_BCP_FORMAT_FILE" DTS:refId="Package\EXECUTE_CREATE_ProductModelProductDescriptionCulture_BCP_FORMAT_FILE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>CREATE_ProductModelProductDescriptionCulture_BCP_FORMAT_FILE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{35E96758-A45D-4D66-A705-A17DCE5126ED}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_CREATE_ProductPhoto_BCP_FORMAT_FILE" DTS:refId="Package\EXECUTE_CREATE_ProductPhoto_BCP_FORMAT_FILE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>CREATE_ProductPhoto_BCP_FORMAT_FILE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{2048B692-D0DD-4321-891A-F3851B738DE1}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_CREATE_ProductProductPhoto_BCP_FORMAT_FILE" DTS:refId="Package\EXECUTE_CREATE_ProductProductPhoto_BCP_FORMAT_FILE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>CREATE_ProductProductPhoto_BCP_FORMAT_FILE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{39D1A25C-6A91-4016-877C-1D1AA92CBD21}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_CREATE_ProductReview_BCP_FORMAT_FILE" DTS:refId="Package\EXECUTE_CREATE_ProductReview_BCP_FORMAT_FILE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>CREATE_ProductReview_BCP_FORMAT_FILE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{0F0EF973-7B69-412A-8074-61FE74DDBFFF}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_CREATE_ProductSubcategory_BCP_FORMAT_FILE" DTS:refId="Package\EXECUTE_CREATE_ProductSubcategory_BCP_FORMAT_FILE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>CREATE_ProductSubcategory_BCP_FORMAT_FILE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{FBD1F895-C5B0-4E88-99BA-399570910C88}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_CREATE_ScrapReason_BCP_FORMAT_FILE" DTS:refId="Package\EXECUTE_CREATE_ScrapReason_BCP_FORMAT_FILE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>CREATE_ScrapReason_BCP_FORMAT_FILE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{26EBA7E5-B8C5-4B53-AF1A-6016FC6EF964}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_CREATE_TransactionHistory_BCP_FORMAT_FILE" DTS:refId="Package\EXECUTE_CREATE_TransactionHistory_BCP_FORMAT_FILE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>CREATE_TransactionHistory_BCP_FORMAT_FILE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{2BA03D66-82B6-4D3C-809E-4BB525263B9D}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_CREATE_TransactionHistoryArchive_BCP_FORMAT_FILE" DTS:refId="Package\EXECUTE_CREATE_TransactionHistoryArchive_BCP_FORMAT_FILE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>CREATE_TransactionHistoryArchive_BCP_FORMAT_FILE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{3A47B49C-C377-487C-AC42-23EFEFCFBDC1}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_CREATE_UnitMeasure_BCP_FORMAT_FILE" DTS:refId="Package\EXECUTE_CREATE_UnitMeasure_BCP_FORMAT_FILE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>CREATE_UnitMeasure_BCP_FORMAT_FILE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{7AA9BAF0-4C46-46FC-AA3C-6584AC85E487}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_CREATE_WorkOrder_BCP_FORMAT_FILE" DTS:refId="Package\EXECUTE_CREATE_WorkOrder_BCP_FORMAT_FILE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>CREATE_WorkOrder_BCP_FORMAT_FILE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{16DD49B7-6BA8-40AF-BC4E-01E06A517EA3}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_CREATE_WorkOrderRouting_BCP_FORMAT_FILE" DTS:refId="Package\EXECUTE_CREATE_WorkOrderRouting_BCP_FORMAT_FILE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>CREATE_WorkOrderRouting_BCP_FORMAT_FILE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{EB930B79-5180-4F03-8AC8-CA0CEC99890D}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_CREATE_ProductVendor_BCP_FORMAT_FILE" DTS:refId="Package\EXECUTE_CREATE_ProductVendor_BCP_FORMAT_FILE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>CREATE_ProductVendor_BCP_FORMAT_FILE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{98CAC194-6217-4E5D-BB7D-C9BC998413AF}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_CREATE_PurchaseOrderDetail_BCP_FORMAT_FILE" DTS:refId="Package\EXECUTE_CREATE_PurchaseOrderDetail_BCP_FORMAT_FILE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>CREATE_PurchaseOrderDetail_BCP_FORMAT_FILE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{86CD899F-AC3F-4717-9324-3551457C1C4D}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_CREATE_PurchaseOrderHeader_BCP_FORMAT_FILE" DTS:refId="Package\EXECUTE_CREATE_PurchaseOrderHeader_BCP_FORMAT_FILE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>CREATE_PurchaseOrderHeader_BCP_FORMAT_FILE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{96ACE2E6-95B0-4549-9837-86F72DEC349F}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_CREATE_ShipMethod_BCP_FORMAT_FILE" DTS:refId="Package\EXECUTE_CREATE_ShipMethod_BCP_FORMAT_FILE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>CREATE_ShipMethod_BCP_FORMAT_FILE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{81E832FD-7389-45E9-B5F6-44546B3AB41D}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_CREATE_Vendor_BCP_FORMAT_FILE" DTS:refId="Package\EXECUTE_CREATE_Vendor_BCP_FORMAT_FILE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>CREATE_Vendor_BCP_FORMAT_FILE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{93ED3293-063A-421B-B764-5B1D04B4C334}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_CREATE_CountryRegionCurrency_BCP_FORMAT_FILE" DTS:refId="Package\EXECUTE_CREATE_CountryRegionCurrency_BCP_FORMAT_FILE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>CREATE_CountryRegionCurrency_BCP_FORMAT_FILE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{3B309207-53EB-4BA5-A1CC-68AE069322AF}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_CREATE_CreditCard_BCP_FORMAT_FILE" DTS:refId="Package\EXECUTE_CREATE_CreditCard_BCP_FORMAT_FILE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>CREATE_CreditCard_BCP_FORMAT_FILE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{1E2AF42D-0B84-4AE9-8692-044C415C4B71}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_CREATE_Currency_BCP_FORMAT_FILE" DTS:refId="Package\EXECUTE_CREATE_Currency_BCP_FORMAT_FILE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>CREATE_Currency_BCP_FORMAT_FILE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{9C09FE62-8A4F-4FB6-AD91-A268C5EDDEB2}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_CREATE_CurrencyRate_BCP_FORMAT_FILE" DTS:refId="Package\EXECUTE_CREATE_CurrencyRate_BCP_FORMAT_FILE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>CREATE_CurrencyRate_BCP_FORMAT_FILE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{A3F307FD-54F1-4E57-A842-2E9B07D271DB}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_CREATE_Customer_BCP_FORMAT_FILE" DTS:refId="Package\EXECUTE_CREATE_Customer_BCP_FORMAT_FILE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>CREATE_Customer_BCP_FORMAT_FILE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{2345FEF5-AAD5-4197-A715-D5A4FAD7379E}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_CREATE_PersonCreditCard_BCP_FORMAT_FILE" DTS:refId="Package\EXECUTE_CREATE_PersonCreditCard_BCP_FORMAT_FILE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>CREATE_PersonCreditCard_BCP_FORMAT_FILE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{05741194-9D49-41FF-A303-F9B4B6BCAE66}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_CREATE_SalesOrderDetail_BCP_FORMAT_FILE" DTS:refId="Package\EXECUTE_CREATE_SalesOrderDetail_BCP_FORMAT_FILE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>CREATE_SalesOrderDetail_BCP_FORMAT_FILE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{96F09D88-8002-462F-B704-602C2B369F47}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_CREATE_SalesOrderHeader_BCP_FORMAT_FILE" DTS:refId="Package\EXECUTE_CREATE_SalesOrderHeader_BCP_FORMAT_FILE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>CREATE_SalesOrderHeader_BCP_FORMAT_FILE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{08947A33-4A3F-46FD-AF79-F87708E13837}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_CREATE_SalesOrderHeaderSalesReason_BCP_FORMAT_FILE" DTS:refId="Package\EXECUTE_CREATE_SalesOrderHeaderSalesReason_BCP_FORMAT_FILE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>CREATE_SalesOrderHeaderSalesReason_BCP_FORMAT_FILE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{F75A4FB2-462C-4FA6-B8D5-F43239E47BB3}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_CREATE_SalesPerson_BCP_FORMAT_FILE" DTS:refId="Package\EXECUTE_CREATE_SalesPerson_BCP_FORMAT_FILE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>CREATE_SalesPerson_BCP_FORMAT_FILE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{0F2FC60F-7594-47B0-AF85-7083C27A1379}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_CREATE_SalesPersonQuotaHistory_BCP_FORMAT_FILE" DTS:refId="Package\EXECUTE_CREATE_SalesPersonQuotaHistory_BCP_FORMAT_FILE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>CREATE_SalesPersonQuotaHistory_BCP_FORMAT_FILE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{FA96BB4C-B72D-4A7B-BD24-D2BE359652D6}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_CREATE_SalesReason_BCP_FORMAT_FILE" DTS:refId="Package\EXECUTE_CREATE_SalesReason_BCP_FORMAT_FILE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>CREATE_SalesReason_BCP_FORMAT_FILE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{1AB94CD8-42B9-420C-9A52-BD7E524C093A}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_CREATE_SalesTaxRate_BCP_FORMAT_FILE" DTS:refId="Package\EXECUTE_CREATE_SalesTaxRate_BCP_FORMAT_FILE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>CREATE_SalesTaxRate_BCP_FORMAT_FILE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{7ABEA627-2881-45A5-AE70-23DC9C704A08}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_CREATE_SalesTerritory_BCP_FORMAT_FILE" DTS:refId="Package\EXECUTE_CREATE_SalesTerritory_BCP_FORMAT_FILE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>CREATE_SalesTerritory_BCP_FORMAT_FILE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{EB70CB93-A59B-49FE-853E-B983193BBE03}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_CREATE_SalesTerritoryHistory_BCP_FORMAT_FILE" DTS:refId="Package\EXECUTE_CREATE_SalesTerritoryHistory_BCP_FORMAT_FILE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>CREATE_SalesTerritoryHistory_BCP_FORMAT_FILE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{DF94E17C-7D85-4D90-81DF-F8EFC49AE667}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_CREATE_ShoppingCartItem_BCP_FORMAT_FILE" DTS:refId="Package\EXECUTE_CREATE_ShoppingCartItem_BCP_FORMAT_FILE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>CREATE_ShoppingCartItem_BCP_FORMAT_FILE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{A8B002D0-E9CF-48FE-87D5-08D38B546F60}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_CREATE_SpecialOffer_BCP_FORMAT_FILE" DTS:refId="Package\EXECUTE_CREATE_SpecialOffer_BCP_FORMAT_FILE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>CREATE_SpecialOffer_BCP_FORMAT_FILE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{639A78EA-4536-4E3E-BB9B-BC3C838AAAE9}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_CREATE_SpecialOfferProduct_BCP_FORMAT_FILE" DTS:refId="Package\EXECUTE_CREATE_SpecialOfferProduct_BCP_FORMAT_FILE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>CREATE_SpecialOfferProduct_BCP_FORMAT_FILE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{DD4E98E3-D43E-46A0-86F7-B31864D8D1A2}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_CREATE_Store_BCP_FORMAT_FILE" DTS:refId="Package\EXECUTE_CREATE_Store_BCP_FORMAT_FILE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>CREATE_Store_BCP_FORMAT_FILE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+</DTS:Executable>

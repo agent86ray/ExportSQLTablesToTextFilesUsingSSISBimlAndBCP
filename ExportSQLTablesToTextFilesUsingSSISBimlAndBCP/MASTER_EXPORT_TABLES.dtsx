@@ -1,0 +1,550 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DTS:Executable DTS:CreationDate="03/31/2019 10:29:55" DTS:CreationName="Microsoft.Package" DTS:CreatorComputerName="DESKTOP-U8PAEJC" DTS:CreatorName="RaymondBarley" DTS:DTSID="{91581E17-8166-473A-BF70-FE7B1BDDF061}" DTS:ExecutableType="Microsoft.Package" DTS:LastModifiedProductVersion="" DTS:LocaleID="1033" DTS:ObjectName="MASTER_EXPORT_TABLES" DTS:ProtectionLevel="0" DTS:refId="Package" DTS:VersionBuild="0" DTS:VersionGUID="{AA2632BC-5D6E-476C-B5CB-D84EB25F63BF}" DTS:VersionMajor="0" xmlns:DTS="www.microsoft.com/SqlServer/Dts">
+  <DTS:Property DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:Executables>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{0CA83655-2126-41BB-B00C-5FC2CCC1E20C}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_EXPORT_Department_TABLE" DTS:refId="Package\EXECUTE_EXPORT_Department_TABLE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>EXPORT_Department_TABLE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{E4BF59D8-89A5-4DB3-B41D-5E942D68B63F}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_EXPORT_Employee_TABLE" DTS:refId="Package\EXECUTE_EXPORT_Employee_TABLE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>EXPORT_Employee_TABLE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{D652C1AE-7414-47A9-8369-484608247247}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_EXPORT_EmployeeDepartmentHistory_TABLE" DTS:refId="Package\EXECUTE_EXPORT_EmployeeDepartmentHistory_TABLE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>EXPORT_EmployeeDepartmentHistory_TABLE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{FB9A4929-F500-427F-A6ED-04C2B6EE3752}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_EXPORT_EmployeePayHistory_TABLE" DTS:refId="Package\EXECUTE_EXPORT_EmployeePayHistory_TABLE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>EXPORT_EmployeePayHistory_TABLE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{AC04F749-A17D-4D70-81EA-0D554B4739C5}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_EXPORT_JobCandidate_TABLE" DTS:refId="Package\EXECUTE_EXPORT_JobCandidate_TABLE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>EXPORT_JobCandidate_TABLE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{00A7CCC6-C2A7-42B5-9B37-4BF99FE15FAF}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_EXPORT_Shift_TABLE" DTS:refId="Package\EXECUTE_EXPORT_Shift_TABLE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>EXPORT_Shift_TABLE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{32555E1F-B5B8-4A1C-8756-A4D7D18C2939}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_EXPORT_Address_TABLE" DTS:refId="Package\EXECUTE_EXPORT_Address_TABLE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>EXPORT_Address_TABLE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{2283E00B-9323-4CB4-A098-42A5C5F71AA9}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_EXPORT_AddressType_TABLE" DTS:refId="Package\EXECUTE_EXPORT_AddressType_TABLE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>EXPORT_AddressType_TABLE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{ACB91A00-E770-4324-9B43-909D380BE5A9}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_EXPORT_BusinessEntity_TABLE" DTS:refId="Package\EXECUTE_EXPORT_BusinessEntity_TABLE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>EXPORT_BusinessEntity_TABLE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{BB84C54E-3774-4483-A448-D097CE96D709}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_EXPORT_BusinessEntityAddress_TABLE" DTS:refId="Package\EXECUTE_EXPORT_BusinessEntityAddress_TABLE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>EXPORT_BusinessEntityAddress_TABLE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{9B39D979-492E-46A8-8810-35BE26386C31}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_EXPORT_BusinessEntityContact_TABLE" DTS:refId="Package\EXECUTE_EXPORT_BusinessEntityContact_TABLE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>EXPORT_BusinessEntityContact_TABLE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{3AA8E4D6-5832-4BA7-AAC6-4C3376F88588}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_EXPORT_ContactType_TABLE" DTS:refId="Package\EXECUTE_EXPORT_ContactType_TABLE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>EXPORT_ContactType_TABLE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{AF1819C6-A9CE-4E2F-B068-9F7A73246022}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_EXPORT_CountryRegion_TABLE" DTS:refId="Package\EXECUTE_EXPORT_CountryRegion_TABLE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>EXPORT_CountryRegion_TABLE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{4DD5C970-EC92-4CD3-937F-9C81AF879A1E}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_EXPORT_EmailAddress_TABLE" DTS:refId="Package\EXECUTE_EXPORT_EmailAddress_TABLE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>EXPORT_EmailAddress_TABLE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{FEF2FBF2-7B7D-4CF5-B3C8-26035B76B90E}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_EXPORT_Password_TABLE" DTS:refId="Package\EXECUTE_EXPORT_Password_TABLE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>EXPORT_Password_TABLE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{93C4EA11-5508-429F-8231-8F7D1B62DB56}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_EXPORT_Person_TABLE" DTS:refId="Package\EXECUTE_EXPORT_Person_TABLE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>EXPORT_Person_TABLE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{955CD2CA-C2B0-4B04-A374-6CD77C4679CA}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_EXPORT_PersonPhone_TABLE" DTS:refId="Package\EXECUTE_EXPORT_PersonPhone_TABLE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>EXPORT_PersonPhone_TABLE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{16DAAEB1-342F-4121-9C37-C9A7BC9007F0}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_EXPORT_PhoneNumberType_TABLE" DTS:refId="Package\EXECUTE_EXPORT_PhoneNumberType_TABLE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>EXPORT_PhoneNumberType_TABLE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{2B91B652-1D88-4480-969C-CDAA6D5635E7}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_EXPORT_StateProvince_TABLE" DTS:refId="Package\EXECUTE_EXPORT_StateProvince_TABLE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>EXPORT_StateProvince_TABLE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{EE21E638-C6BF-471C-8A57-450E3A284912}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_EXPORT_BillOfMaterials_TABLE" DTS:refId="Package\EXECUTE_EXPORT_BillOfMaterials_TABLE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>EXPORT_BillOfMaterials_TABLE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{519417BA-7307-47C3-8EC2-710C63E74954}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_EXPORT_Culture_TABLE" DTS:refId="Package\EXECUTE_EXPORT_Culture_TABLE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>EXPORT_Culture_TABLE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{71FAAEFD-05EA-4539-BFA3-4D78A5B4AF5B}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_EXPORT_Document_TABLE" DTS:refId="Package\EXECUTE_EXPORT_Document_TABLE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>EXPORT_Document_TABLE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{63C4A144-0E14-4E73-B2A5-A5813E31B38F}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_EXPORT_Illustration_TABLE" DTS:refId="Package\EXECUTE_EXPORT_Illustration_TABLE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>EXPORT_Illustration_TABLE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{3999817D-08F9-4E34-9A7C-73437DBC0E90}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_EXPORT_Location_TABLE" DTS:refId="Package\EXECUTE_EXPORT_Location_TABLE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>EXPORT_Location_TABLE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{7B7A0DE9-9B61-4F6F-930A-DE4568B8C137}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_EXPORT_Product_TABLE" DTS:refId="Package\EXECUTE_EXPORT_Product_TABLE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>EXPORT_Product_TABLE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{C01EE142-26C0-45D1-BFC2-EE1C2E7A75B9}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_EXPORT_ProductCategory_TABLE" DTS:refId="Package\EXECUTE_EXPORT_ProductCategory_TABLE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>EXPORT_ProductCategory_TABLE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{61588676-4465-4E4A-BD45-95A380C39D5A}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_EXPORT_ProductCostHistory_TABLE" DTS:refId="Package\EXECUTE_EXPORT_ProductCostHistory_TABLE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>EXPORT_ProductCostHistory_TABLE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{39497226-D72F-4EE8-8C50-C547EF78553F}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_EXPORT_ProductDescription_TABLE" DTS:refId="Package\EXECUTE_EXPORT_ProductDescription_TABLE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>EXPORT_ProductDescription_TABLE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{29523F63-86A3-4576-8135-F8AB9A2E6495}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_EXPORT_ProductDocument_TABLE" DTS:refId="Package\EXECUTE_EXPORT_ProductDocument_TABLE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>EXPORT_ProductDocument_TABLE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{3366C08A-39C1-44A7-9494-31413BE49D5F}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_EXPORT_ProductInventory_TABLE" DTS:refId="Package\EXECUTE_EXPORT_ProductInventory_TABLE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>EXPORT_ProductInventory_TABLE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{C4415B4B-C02B-4499-882A-862B8D0019D0}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_EXPORT_ProductListPriceHistory_TABLE" DTS:refId="Package\EXECUTE_EXPORT_ProductListPriceHistory_TABLE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>EXPORT_ProductListPriceHistory_TABLE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{20646AE9-8661-4FB0-AE2A-BB30FD28C53E}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_EXPORT_ProductModel_TABLE" DTS:refId="Package\EXECUTE_EXPORT_ProductModel_TABLE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>EXPORT_ProductModel_TABLE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{525B2066-A4AA-477A-97FC-DD2DB3F15BFB}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_EXPORT_ProductModelIllustration_TABLE" DTS:refId="Package\EXECUTE_EXPORT_ProductModelIllustration_TABLE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>EXPORT_ProductModelIllustration_TABLE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{ACE3AB20-3D9C-4449-8C95-C76DDC23C2EE}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_EXPORT_ProductModelProductDescriptionCulture_TABLE" DTS:refId="Package\EXECUTE_EXPORT_ProductModelProductDescriptionCulture_TABLE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>EXPORT_ProductModelProductDescriptionCulture_TABLE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{8003F978-892C-459D-A5DB-D8A12553F080}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_EXPORT_ProductPhoto_TABLE" DTS:refId="Package\EXECUTE_EXPORT_ProductPhoto_TABLE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>EXPORT_ProductPhoto_TABLE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{B6E50369-283D-4A6B-91FA-B18A3D7224B1}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_EXPORT_ProductProductPhoto_TABLE" DTS:refId="Package\EXECUTE_EXPORT_ProductProductPhoto_TABLE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>EXPORT_ProductProductPhoto_TABLE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{F7DEFB8A-F684-49F7-AFC3-DFF53A47585E}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_EXPORT_ProductReview_TABLE" DTS:refId="Package\EXECUTE_EXPORT_ProductReview_TABLE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>EXPORT_ProductReview_TABLE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{45225BCA-D280-472E-BBA3-365603227870}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_EXPORT_ProductSubcategory_TABLE" DTS:refId="Package\EXECUTE_EXPORT_ProductSubcategory_TABLE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>EXPORT_ProductSubcategory_TABLE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{7C23FE8F-14B2-44F6-9434-57250293FA80}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_EXPORT_ScrapReason_TABLE" DTS:refId="Package\EXECUTE_EXPORT_ScrapReason_TABLE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>EXPORT_ScrapReason_TABLE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{9B37AE27-62E9-4668-954A-7EE2C31BC842}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_EXPORT_TransactionHistory_TABLE" DTS:refId="Package\EXECUTE_EXPORT_TransactionHistory_TABLE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>EXPORT_TransactionHistory_TABLE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{42C0E72D-F262-4FBA-8540-72F840A3775F}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_EXPORT_TransactionHistoryArchive_TABLE" DTS:refId="Package\EXECUTE_EXPORT_TransactionHistoryArchive_TABLE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>EXPORT_TransactionHistoryArchive_TABLE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{9A96DA9E-3F20-476A-BC42-D858B8DADD59}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_EXPORT_UnitMeasure_TABLE" DTS:refId="Package\EXECUTE_EXPORT_UnitMeasure_TABLE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>EXPORT_UnitMeasure_TABLE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{28F0B3FC-C5D1-405D-A399-67955A801FCA}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_EXPORT_WorkOrder_TABLE" DTS:refId="Package\EXECUTE_EXPORT_WorkOrder_TABLE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>EXPORT_WorkOrder_TABLE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{6326A600-6327-425D-8D01-C59ED8573484}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_EXPORT_WorkOrderRouting_TABLE" DTS:refId="Package\EXECUTE_EXPORT_WorkOrderRouting_TABLE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>EXPORT_WorkOrderRouting_TABLE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{FEC464FB-983E-4E06-85EE-A360E307EFC7}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_EXPORT_ProductVendor_TABLE" DTS:refId="Package\EXECUTE_EXPORT_ProductVendor_TABLE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>EXPORT_ProductVendor_TABLE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{204420DC-FE9C-4747-84B3-80B1840DABCB}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_EXPORT_PurchaseOrderDetail_TABLE" DTS:refId="Package\EXECUTE_EXPORT_PurchaseOrderDetail_TABLE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>EXPORT_PurchaseOrderDetail_TABLE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{C68DFEA3-3939-4BF5-AB88-754BAABF3326}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_EXPORT_PurchaseOrderHeader_TABLE" DTS:refId="Package\EXECUTE_EXPORT_PurchaseOrderHeader_TABLE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>EXPORT_PurchaseOrderHeader_TABLE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{EAC820BC-5596-4298-9C7F-01209BC29C1C}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_EXPORT_ShipMethod_TABLE" DTS:refId="Package\EXECUTE_EXPORT_ShipMethod_TABLE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>EXPORT_ShipMethod_TABLE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{16E4E98F-CA0B-405E-9A0F-6D00BE5616DF}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_EXPORT_Vendor_TABLE" DTS:refId="Package\EXECUTE_EXPORT_Vendor_TABLE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>EXPORT_Vendor_TABLE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{3DB91AD3-BAA7-4AB9-BBA1-6761F5B0CD89}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_EXPORT_CountryRegionCurrency_TABLE" DTS:refId="Package\EXECUTE_EXPORT_CountryRegionCurrency_TABLE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>EXPORT_CountryRegionCurrency_TABLE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{6B2F261C-3BBF-4A61-99C0-44288C2BB8F4}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_EXPORT_CreditCard_TABLE" DTS:refId="Package\EXECUTE_EXPORT_CreditCard_TABLE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>EXPORT_CreditCard_TABLE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{4AF9D884-8BC9-4A5D-B7A9-EF54C6E79651}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_EXPORT_Currency_TABLE" DTS:refId="Package\EXECUTE_EXPORT_Currency_TABLE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>EXPORT_Currency_TABLE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{CE50EF1A-7FE6-4716-A38E-8996058CE16E}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_EXPORT_CurrencyRate_TABLE" DTS:refId="Package\EXECUTE_EXPORT_CurrencyRate_TABLE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>EXPORT_CurrencyRate_TABLE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{24099A4A-BC90-4F44-AFD3-D2B215F51685}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_EXPORT_Customer_TABLE" DTS:refId="Package\EXECUTE_EXPORT_Customer_TABLE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>EXPORT_Customer_TABLE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{8ECE189E-E9D1-4A97-AE43-C60452226962}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_EXPORT_PersonCreditCard_TABLE" DTS:refId="Package\EXECUTE_EXPORT_PersonCreditCard_TABLE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>EXPORT_PersonCreditCard_TABLE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{EA4FF550-720B-49C9-BD08-163795E6733F}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_EXPORT_SalesOrderDetail_TABLE" DTS:refId="Package\EXECUTE_EXPORT_SalesOrderDetail_TABLE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>EXPORT_SalesOrderDetail_TABLE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{80217BD1-B451-46B7-86AF-689B853306F5}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_EXPORT_SalesOrderHeader_TABLE" DTS:refId="Package\EXECUTE_EXPORT_SalesOrderHeader_TABLE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>EXPORT_SalesOrderHeader_TABLE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{3D6800C5-E7EA-4790-8358-75CD783C4765}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_EXPORT_SalesOrderHeaderSalesReason_TABLE" DTS:refId="Package\EXECUTE_EXPORT_SalesOrderHeaderSalesReason_TABLE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>EXPORT_SalesOrderHeaderSalesReason_TABLE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{1ACF5A58-351C-4B69-91F4-F6590B7AAD02}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_EXPORT_SalesPerson_TABLE" DTS:refId="Package\EXECUTE_EXPORT_SalesPerson_TABLE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>EXPORT_SalesPerson_TABLE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{50289F74-0569-4B96-8FCD-333AC67692B7}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_EXPORT_SalesPersonQuotaHistory_TABLE" DTS:refId="Package\EXECUTE_EXPORT_SalesPersonQuotaHistory_TABLE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>EXPORT_SalesPersonQuotaHistory_TABLE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{CCEA9F4F-B7F0-4C3D-983F-4710712FDF20}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_EXPORT_SalesReason_TABLE" DTS:refId="Package\EXECUTE_EXPORT_SalesReason_TABLE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>EXPORT_SalesReason_TABLE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{F0C373C4-636E-4958-8B31-4F4283444A4E}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_EXPORT_SalesTaxRate_TABLE" DTS:refId="Package\EXECUTE_EXPORT_SalesTaxRate_TABLE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>EXPORT_SalesTaxRate_TABLE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{0670AFD3-3484-4515-BBD7-5CCFF5907799}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_EXPORT_SalesTerritory_TABLE" DTS:refId="Package\EXECUTE_EXPORT_SalesTerritory_TABLE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>EXPORT_SalesTerritory_TABLE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{9F2DC48E-0C5B-45DB-8AC6-37011E7662A2}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_EXPORT_SalesTerritoryHistory_TABLE" DTS:refId="Package\EXECUTE_EXPORT_SalesTerritoryHistory_TABLE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>EXPORT_SalesTerritoryHistory_TABLE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{03B5E0ED-B71C-4F56-AD3E-E94C721831A3}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_EXPORT_ShoppingCartItem_TABLE" DTS:refId="Package\EXECUTE_EXPORT_ShoppingCartItem_TABLE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>EXPORT_ShoppingCartItem_TABLE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{529A47C0-B4AC-4A84-B79C-2987C215CE1E}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_EXPORT_SpecialOffer_TABLE" DTS:refId="Package\EXECUTE_EXPORT_SpecialOffer_TABLE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>EXPORT_SpecialOffer_TABLE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{07E0225F-CE7A-4CC4-A798-155CB9DBFFF3}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_EXPORT_SpecialOfferProduct_TABLE" DTS:refId="Package\EXECUTE_EXPORT_SpecialOfferProduct_TABLE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>EXPORT_SpecialOfferProduct_TABLE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable DTS:CreationName="Microsoft.ExecutePackageTask" DTS:DTSID="{8325EB78-1B34-4C07-A2E2-93B44B0F43D7}" DTS:ExecutableType="Microsoft.ExecutePackageTask" DTS:LocaleID="-1" DTS:ObjectName="EXECUTE_EXPORT_Store_TABLE" DTS:refId="Package\EXECUTE_EXPORT_Store_TABLE" DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <PackageName>EXPORT_Store_TABLE.dtsx</PackageName>
+          <UseProjectReference>True</UseProjectReference>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+</DTS:Executable>
